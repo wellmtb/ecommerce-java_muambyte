@@ -1,0 +1,187 @@
+body{
+    background-color: white;
+}
+/* ------------------------------------------------------------ INICIO DO CABEÇALHO------------------------------------------------------------ */
+.navbar{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-inverse{
+    background:rgba(1,58,80,0.9);
+    border: none;
+        
+}
+.navbar-form{ 
+    width: 50%;
+    margin-left: 30%;
+}
+.navbar-brand>img{
+    position: absolute;
+    top: 1em;
+}
+.buscar{
+    width: 70%;
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.40;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+.form-group{
+    width: 100%;
+}
+.menu-horizontal{
+    width: 100%;
+    height: 3.2em;
+    background-color: #EDEDED;
+    margin-bottom: 3em;
+    box-shadow: 1px 1px #ccc;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    
+}
+.menu li{ 
+    width:150px;
+    position:relative;
+}
+/*Configurações Padrões*/
+.menu ul, .menu li, .menu a{
+    list-style:none; 
+    text-decoration:none;
+}
+ul.menu ul{ 
+    position:absolute;
+    display:none; 
+    box-shadow:3px 3px 2px #333;
+} 
+
+.menu li a{
+    display:block; 
+    padding:0 20px; 
+    line-height:45px;
+    height:45px; 
+    transition:all 0.2s linear;
+}
+ 
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{ 
+    display:block; 
+    top:45px; 
+    left:0;
+    z-index: 1;
+    padding:5px; 
+    width:130%; 
+    border-radius:0 0 5px 5px;
+}
+.menu ul.submenu-1 a{  
+    width:120%; 
+    padding:0 auto;
+    border-radius:5px;  
+}
+ 
+/* Configurações nivel 2*/
+
+
+.menu a{
+    color:#000;
+}
+.menu li:hover > a{
+    background:rgba(1,58,80,0.9);
+    color:#fff;
+}
+ 
+/*nivel 2*/
+.submenu-1{
+    background:rgba(1,58,80,0.9);
+}
+.submenu-1 a{
+    color:#fff;
+}
+.submenu-1 li:hover > a{
+    background:rgba(1,58,80,0.9);
+}
+/* ------------------------------------------------------------ FIM DO CABEÇALHO --------------------------------------------------------------- */
+.formulario{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px #ccc;
+}
+.labels, .inputs{
+    width: 100%;
+}
+.inputs{
+    height: 70%;
+}
+.area-input{
+    width: 45%;
+    margin-bottom: 2%;
+}
+.area-total{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.area-input-medio{
+    width: 20%;
+    margin-bottom: 2%;
+}
+.area-input-menor{
+    width: 30%;
+    margin-bottom: 2%;
+}
+h3,p{
+    width: 100%;
+}
+.botoes{
+    width: 100%;
+    margin-top: 3%;
+}
+/*--------------------------------------------------------- RODAPÉ ------------------------------------------------------------------------------*/
+.redesSocias_Pagamento{
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #E6E6FA;
+    border-bottom: 1px solid #E6E6FA;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.row{
+    width: 100%;
+    clear: both;
+    background-color: #fff;
+}
+.row h2{
+    background-image:linear-gradient(to bottom, #FFF, #F1F1F1);
+    border: 1px solid #EAEAEA;
+    padding: 10px; 
+    font-size: 1.2em;
+    color: #01668D;
+    width: 100%;
+    
+}
+.direitos-autorais{
+    background:rgba(1,58,80,0.9);
+    color: white;
+    padding-top: 5px;
+}

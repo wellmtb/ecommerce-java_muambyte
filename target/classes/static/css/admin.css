@@ -1,0 +1,19 @@
+body{
+	background-color: #343a40;
+	display: flex;
+	justify-content: center;
+}
+.login-admin{
+	width: 300px;
+	height: 40%;
+	margin-top: 20%;
+}
+.inputs{
+	height: 3em;
+	margin-bottom: 10px;
+}
+img{
+	position: absolute;
+	left: 45%;
+	top: 18%;
+}
