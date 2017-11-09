@@ -15,30 +15,7 @@
   <link href="css/dash-bootstrap.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Muambyte</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Dashboard</a></li>          
-          <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true">&nbsp Logout</i></a></li>
-
-        </ul>
-        <form class="navbar-form navbar-right">
-          <input type="text" class="form-control" placeholder="Search...">
-        </form>
-      </div>
-    </div>
-  </nav>
-
+<c:import url="cabecalho-admin.jsp"/>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3 col-md-2 sidebar">
@@ -49,12 +26,12 @@
             <li><a href="#"><i class="fa fa-print" aria-hidden="true"></i>&nbsp Relatórios</a></li>
         </ul>        
       </div>
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">          
+      <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-2 main">          
 
         <div class="breadcrumb">
             <h4>Dashboard / Produtos</h4>
         </div>
-        <div class="container">
+        <div class="container col-md-12">
 	<h3 class="page-header">Listagem de Produtos</h3>
 	<div class="table-responsive">
           <table class="table table-striped">
@@ -76,7 +53,7 @@
               	<td>${item.id}</td>
                 <td>${item.produto}</td>
                 <td>${item.descricao}</td>
-                <td>${item.categoria}</td>
+                <td>${item.categoria.categoria}</td>
                 <td>${item.preco}</td>
                 <td>${item.estoque}</td>
                 <td>${item.status}</td>                

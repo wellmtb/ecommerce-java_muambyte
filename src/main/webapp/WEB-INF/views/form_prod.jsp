@@ -37,9 +37,9 @@
       <div class="form-group">
         <label class="col-md-4 control-label">Categoria</label>
         <div class="col-md-2">
-        <select class="selectpicker">        		
+        <select name="categoria.id" class="selectpicker">        		
       		<c:forEach items="${categorias}" var="item">
-  				<option value="${item.categoria}" name="${item.categoria}">${item.categoria}</option>
+  				<option value="${item.id}">${item.categoria}</option>
   			</c:forEach>  						
 		</select>
 		</div>
@@ -71,8 +71,8 @@
       <div class="form-group">
         <label class="col-md-4 control-label"></label>
         <div class="col-md-8">
-          <button  name="btnsalvar" type="submit" class="btn btn-primary">Salvar</button>
-          <button  name="btncancelar" class="btn btn-danger">Cancelar</button>
+          <button  type="submit" class="btn btn-primary">Salvar</button>
+          <button type="reset" class="btn btn-danger">Cancelar</button>
         </div>
       </div>
   </form>

@@ -58,7 +58,7 @@ public class ProdutosController {
 			return modelAndView;
 		}	
 	 
-	 @RequestMapping("/removeProduto")
+	 @RequestMapping("/removeProduto") // método para remover produtos
 		public String remove(Produto produto) {
 			produtoDao.remove(produto);
 			
@@ -66,7 +66,7 @@ public class ProdutosController {
 		}
 	
 	 
-	 @RequestMapping("/listagem-produtos")
+	 @RequestMapping("/listagem-produtos") // método para listar produtos
 		public ModelAndView listarProdutos() {
 			List<Produto> produtos = produtoDao.listar();
 			ModelAndView modelAndView = new ModelAndView("/lista-produtos");
