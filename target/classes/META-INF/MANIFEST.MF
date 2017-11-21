@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: muambyte
 Implementation-Version: 1.0.0-SNAPSHOT
-Built-By: deivison
+Built-By: wellington
 Implementation-Vendor-Id: muambyte
-Build-Jdk: 1.8.0_131
+Build-Jdk: 1.8.0_151
 Implementation-URL: http://projects.spring.io/spring-boot/muambyte/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.

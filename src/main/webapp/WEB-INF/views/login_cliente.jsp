@@ -57,10 +57,10 @@
 	</div>	
 	<div class="container">
 		<div class="col-md-4">
-			<form action="$">
-				<label for="">E-mail</label><br>
+			<form action="efetuaLogin">
+				<label for="email">E-mail</label><br>
 				<input type="email" class="form-control"><br>
-				<label for="">Senha</label><br>
+				<label for="senha">Senha</label><br>
 				<input type="password" class="form-control"><br>
 				<button type="submit" class="btn btn-primary">Entrar</button>	
 			</form>			
